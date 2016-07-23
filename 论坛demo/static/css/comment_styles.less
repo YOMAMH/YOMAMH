@@ -1,0 +1,85 @@
+.borderStyle(@size){
+  border: @size ridge blue;
+}
+.fontStyle{
+ font-style: italic;
+}
+.B(@num){
+  border-radius:@num ;
+}
+.D{
+  display: inline-block;
+}
+.fs(@num){
+  font-size: @num;
+}
+div#photosContainer{
+  background: black;
+  color: white;
+  .borderStyle(4px);
+  width: 800px;
+}
+.phototItem{
+  .D;
+  width: 120px;
+  margin-left: 13px;
+}
+div#photoContainer,div#photoComments{
+  background: black;
+  color: white;
+  width: 400px;
+  height: 450px;
+  .D;
+  float: left;
+  .borderStyle(2px);
+}
+div#photoComments{
+  background: white;
+  color: black;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+div#pageComments{
+  margin: 0;
+  clear: both;
+  width: 810px;
+}
+div.comment{
+  .borderStyle(2px);
+  padding: 10px;
+ .B(5px);
+}
+img.listPhoto{width: 100px}
+img.mainPhoto{width: 400px;margin-top: 58px}
+.commentBody{background-color: lightgray;
+  .B(5px);
+  padding: 5px;
+  margin: 0;
+}
+.imageTitle{
+  .fs(28px);
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.commentTitle{.fs(18px);font-weight: bold;}
+.username{.fontStyle;color: blue;}
+.subject{font-weight: bold;}
+.timestamp{
+  color: #555555;
+  .fontStyle;
+  .fs(12px);
+  text-align: right;
+  margin: 0;
+}
+input[type="text"],textarea{
+.borderStyle(2px);
+  .B(5px);
+  padding: 3px;
+  width: 95%;
+}
+input[type="button"]{
+  background-color: blue;
+  color: white;
+  .B(5px);
+}
